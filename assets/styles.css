@@ -5,9 +5,17 @@
 body {
   background-color: bisque;
   color: rgb(41, 57, 57);
+  font-size: 20px;
 }
 
 h1 {
   font-size: 200%;
 }
+
+h2 {
+  font-size: 175%;
+}
+
+h3 {
+  font-size: 150%;
 }
