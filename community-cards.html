@@ -4,10 +4,315 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/styles.css" />
     <title>CR Poker Guys: Community Cards</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="community-cards.html">Community Cards</a>
+            <a class="nav-link" href="seven-card-stud.html">Seven-Card Stud</a>
+            <a class="nav-link" href="five-card-draw.html">Five-Card Draw</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="display-2">Community Cards</h1>
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Omaha (a.k.a. Oma-Hi)
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Cards in hand:</strong> 4 </p>
+            <p><strong>Community cards:</strong> 5 </p>
+            <p><strong>Wild cards:</strong> none </p>
+            <p><strong>Important:</strong> Winning hand combination must include exactly 2 from the hand, 3 from the board.</p>
+            <p>Four cards dealt to each player. Five community cards, Texas Hold ‘Em style: “The Flop” (3 cards); “The Turn” (1 card); “The River” (1 card).</p>
+            <p><strong>Showdown:</strong> Best five-card hand (2 in hand, 3 on board) wins pot.</p>
+        </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Omaha Hi-Lo
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Cards in hand:</strong> 4 </p>
+            <p><strong>Community cards:</strong> 5 </p>
+            <p><strong>Wild cards:</strong> none </p>
+            <p><strong>Important:</strong> Winning hand combination must include exactly 2 from the hand, 3 from the board.</p>
+            <p>Four cards dealt to each player. Five community cards, Texas Hold ‘Em style: “The Flop” (3 cards); “The Turn” (1 card); “The River” (1 card).</p>
+              <p><strong>Showdown:</strong> Make your best five-card hand (2 in hand, 3 on board) for high and low hands. High hand wins 50% of pot. Low hand (8-high or lower) takes remaining 50%. (High hand takes extra chip if uneven pot; winner can choose to leave chip in as extra ante.) If no low hand (8-high or lower), high hand takes entire pot. Same player can win high and low, as players can use different cards for each scenario. </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Council Bluffs
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Cards in hand:</strong> 4 </p>
+            <p><strong>Community cards:</strong> 5 </p>
+            <p><strong>Wild cards:</strong> none </p>
+            <p><strong>Important:</strong> Winning hand combination must include exactly 2 from the hand, 3 from the board.</p>
+            <p>Same game as Omaha Hi-Lo, with the following exception: The fifth community card (“the River”) sets the low-hand qualifier (which is normally 8).</p>
+              <p><strong>Showdown:</strong> Make your best five-card hand (2 in hand, 3 on board) for high and low hands. High hand wins 50% of pot. Low hand (the River card or lower) takes remaining 50%. (High hand takes extra chip if uneven pot; winner can choose to leave chip in as extra ante.) If no low hand (the River or lower), high hand takes entire pot. Same player can win high and low, as players can use different cards for each scenario. </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+            Iron Cross
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>Cards in hand:</strong> 4 </p>
+            <p><strong>Community cards:</strong> 5 </p>
+            <p><strong>Wild cards:</strong> typically none; on occasion, dealer will call the center card in the cross as wild </p>
+              <p>Four cards dealt to each player, and five cards arranged in a cross pattern face-down on table. Round of betting. Flip two outer cross cards, one on each axis. Round of betting. Flip remaining two outer cards. Round of betting. Flip center card. Round of betting.</p>
+              <p><strong>Showdown:</strong> Make the best five-card hand, using only cards in hand and the vertical or horizontal arrangement of cross cards. Player can use 2 to 4 cards from the hand. </p>
+          </div>
+        </div>
+      </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+            Chicago
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> None </p>
+            <p><strong>Special cards:</strong> lowest Spade in the hole </p>
+            <p><strong>Showdown:</strong> best five-card hand takes half the pot. The lowest
+              spade in the hole takes half the pot. If no spades in the hole, high hand
+              takes the entire pot. </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+          Ray Lewis (a.k.a. Fifty-Two)
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> none </p>
+            <p><strong>Showdown:</strong> After last round of betting, everyone takes in their hands, makes one five-card hand and one two-card hand, and reveals simultaneously. The best five-card splits with the best two-card. </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+          Motown
+        </button>
+      </h2>
+      <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> none </p>
+            <p><strong>Special cards:</strong> Jack of Spades, 5 of Spades </p>
+            <p><strong>Showdown:</strong> High hand 50%; Jack of Spades 25%; 5 of Spades 25%. If Jack or 5 are not in the game, high hand gets that share. HOWEVER, if a player has BOTH the Jack and 5 of Spades, that’s Motown, and takes entire pot. Do not have to reveal Motown pre-Showdown. </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+          Deuces, Jacks, and the Man with the Axe
+        </button>
+      </h2>
+      <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> 2s, Jacks, and the King of Diamonds </p>
+            <p><strong>Special cards:</strong> pair of natural 7s </p>
+            <p><strong>Showdown:</strong> The hand that beats all hands: a pair of natural sevens. </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+          Centipede
+        </button>
+      </h2>
+      <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> sequential around the table </p>
+            <p>Each player has an assigned wild rank: the player to the dealer's left is 2, the next 3, and so on. Wilds do not change as players drop out.</p>
+            <p><strong>Showdown:</strong> Best five-card hand. </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseThree">
+          Red and Black
+        </button>
+      </h2>
+      <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> none </p>
+            <p>Simple addition game. Black cards worth 0. Red cards worth face value (exception: Aces=15).</p>
+            <p><strong>Showdown:</strong> High/low hands split the pot. </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseThree">
+          Marilyn Monroe
+        </button>
+      </h2>
+      <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> none </p>
+            <p><strong>Special cards:</strong> Non-face card Diamonds </p>
+            <p>Pips are defined as the symbols in the central part of the card. This excludes the symbols near the number or letter on the card.</p>
+            <p><strong>Showdown:</strong> Showdown: Best five-card hand splits with the hand with the largest number of diamond pips. Face cards do not have any pips. </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseThree">
+          Schrodinger’s Card
+        </button>
+      </h2>
+      <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> none </p>
+            <p><strong>Special cards:</strong> fifth card (dealt as a common card; becomes the high/low pivot) </p>
+            <p>Seven-card stud. Instead of dealing a fifth card to each player (what would normally be the third face-up card), it is revealed as a common card for the entire table. That rank is now "high", and the number just above it is now the "low."</p>
+    
+              <p>Example: common card is a 9—now a high straight is 9-8-7-6-5, and 10s are now the low card. To make this work, Aces are "round the corner," so a straight can pass through the Ace. (That is, 3-2-A-K-Q is a legal straight.)
+              </p>
+            <p><strong>Showdown:</strong> best five-card hand. </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThree">
+          Sidewinder
+        </button>
+      </h2>
+      <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> none </p>
+            <p>Deal two cards down to each player (as usual for Seven Stud). 
+    
+              Then do the four usual Seven Stud face-up rounds, except that: each player gets a card dealt face-down, then each player passes a face-down card to the left, then each reveals a card. The final card is passed, but not revealed, so you wind up with typical four up, three down.
+              </p>
+            <p><strong>Showdown:</strong> best five-card hand. </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseThree">
+            Liege Lord
+        </button>
+      </h2>
+      <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> none </p>
+            <p>Same game as Sidewinder, except for the payout.</p>
+            <p><strong>Showdown:</strong> best five-card hand splits with the remaining player to his right (in theory, the one who was passing to him).</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseThree">
+          My Own Private Omaha
+        </button>
+      </h2>
+      <div id="collapseFifteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> none </p>
+            <p>Seven-card stud, but 2 down/3 up/2 down.</p>
+            <p><strong>Showdown:</strong> Best five-card hand. Player uses his three up cards and two of his four down cards. </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseThree">
+          Baseball: The Backward K
+        </button>
+      </h2>
+      <div id="collapseSixteen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> 9s </p>
+            <p><strong>Special cards:</strong> 7s (as an up card), 3s (as an up card) </p>
+            <p>Seven-card stud. 9s wild. The seventh-inning stretch: if you get a 7 as an up card, you get a free card that round (given after all players have received their up card). Strikeout: if you get a 3 as an up card, you’ve gone down looking—automatic fold.</p>
+            <p><strong>Showdown:</strong> best five-card hand. </p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseThree">
+          Midnight Baseball (not a stud game, but seven-card)
+        </button>
+      </h2>
+      <div id="collapseSeventeen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> ???????? </p>
+            <p><strong>Special cards:</strong> ??????? </p>
+            <p>Description</p>
+            <p><strong>Showdown:</strong> ???????? </p>
+        </div>
+      </div>
+    </div> -->
+    </div>
+    
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    anonymous"></script>
+    
+  
+  
     <h2>COMMUNITY CARDS</h2>
     <h3>Omaha (a.k.a. Oma-Hi)</h3>
     <p class="wild">

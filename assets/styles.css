@@ -3,19 +3,25 @@
 }
 
 body {
-  background-color: bisque;
   color: rgb(41, 57, 57);
   font-size: 20px;
 }
 
-h1 {
-  font-size: 200%;
+.navbar {
+  background-color: bisque;
 }
 
-h2 {
-  font-size: 175%;
+.nav-link {
+  color: firebrick;
 }
 
-h3 {
-  font-size: 150%;
+.display-2 {
+  background-color: dimgray;
+  color: whitesmoke;
+}
+
+.btn {
+  font-size: 32px;
+  background-color: forestgreen;
+  color: whitesmoke;
 }

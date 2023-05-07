@@ -4,26 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/styles.css">
     <title>CR Poker Guys: Five Card Draw</title>
 </head>
 <body>
-    <h2>FIVE CARD DRAW</h2>
-<h3>Jacks or Better, Trips to Win</h3>
-<p class="wild">Wild cards: none</p>
-<p>Five cards dealt to each player. To make an opening bet, player must have at least a pair of Jacks or better. Once an opening bet has been made, any player can call/raise the bet. Draw up to 3 cards (or 4 with an Ace). Betting phase follows. If all players check, the players re-ante and a new hand is played. If a bet is made and a player folds, that player is out of the game permanently.</p> 
-<p>Showdown: If a bet was made, all remaining players show their hands. A winning hand must be three of a kind or better to take the pot. If no hands reach this threshold, the remaining players re-ante and a new hand is played.</p>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="community-cards.html">Community Cards</a>
+              <a class="nav-link" href="seven-card-stud.html">Seven-Card Stud</a>
+              <a class="nav-link" href="five-card-draw.html">Five-Card Draw</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-<h3>Beat the Daryl</h3>
+      <h1 class="display-2">Five-Card Draw</h1>
+<!-- <h1 class="display-2">Display 2</h1>
+<h1 class="display-3">Display 3</h1>
+<h1 class="display-4">Display 4</h1>
+<h1 class="display-5">Display 5</h1>
+<h1 class="display-6">Display 6</h1> -->
 
-<p class="wild">Wild cards: none</p>
-<p>Five cards dealt to each player. Draw phase: Discard up to 3 (or 4 with an Ace). Betting phase follows; anyone who folds leaves the game permanently.</p>
-<p>Showdown: Determine which player has the best five-card hand. Then, gather up all discards from the draw phase, and form “the Daryl’s” best five-card hand. If the top player beats the Daryl, he takes the pot. If Daryl wins, all players who remained in the hand re-ante, and another hand is dealt.</p>
+    <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Jacks or Better, Trips to Win
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p><strong>Wild cards:</strong> None</p>
+          <p>Five cards dealt to each player. To make an opening bet, player must have at least a pair of Jacks or better. Once an opening bet has been made, any player can call/raise the bet. Draw up to 3 cards (or 4 with an Ace). Betting phase follows. If all players check, the players re-ante and a new hand is played. If a bet is made and a player folds, that player is out of the game permanently.</p> 
+        <p>Showdown: If a bet was made, all remaining players show their hands. A winning hand must be three of a kind or better to take the pot. If no hands reach this threshold, the remaining players re-ante and a new hand is played.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Beat the Daryl
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> none</p>
+            <p>Five cards dealt to each player. Draw phase: Discard up to 3 (or 4 with an Ace). Betting phase follows; anyone who folds leaves the game permanently.</p>
+            <p><strong>Showdown:</strong> Determine which player has the best five-card hand. Then, gather up all discards from the draw phase, and form “the Daryl’s” best five-card hand. If the top player beats the Daryl, he takes the pot. If Daryl wins, all players who remained in the hand re-ante, and another hand is dealt.</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Fours, Whores, and ’Staches
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            <p><strong>Wild cards:</strong> 4s, Queens, Jacks and Kings with mustaches</p>
+            <p>Five cards dealt to each player. Due to number of wild cards, this game might be better played as a Five Card Stud, or with a limited draw phase (maximum 2 cards).</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<h3>Fours, Whores, and ’Staches</h3>
-<p class="wild">Wild cards: 4s, Queens, Jacks and Kings with mustaches</p>
-<p>Five cards dealt to each player. Due to number of wild cards, this game might be better played as a Five Card Stud, or with a limited draw phase (maximum 2 cards).</p>
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+anonymous"></script>
 </body>
 </html>
